@@ -130,7 +130,7 @@ while running:
 
     # Apply gravity to the ball's speed
     ball_speed_y += gravity
-    print(derivative_x)
+    #print(derivative_x)
 
     
     # Bounce the ball when it hits the bottom of the screen
@@ -189,9 +189,9 @@ while running:
     #render legend
     text = font.render("Proportional (F1/F2 to adjust): " + str(kp), True, (255,0,0))
     screen.blit(text, (10,40))
-    text = font.render("Integral (F2/F3 to adjust): " + str(ki), True, (0,255,0))
+    text = font.render("Integral (F3/F4 to adjust): " + str(ki), True, (0,255,0))
     screen.blit(text, (10,60))
-    text = font.render("Derivative (F4/F5 to adjust): " + str(kd), True, (0,0,255))
+    text = font.render("Derivative (F5/F6 to adjust): " + str(kd), True, (0,0,255))
     screen.blit(text, (10,80))
     #Update the display
     pygame.display.update()
